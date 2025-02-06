@@ -8,4 +8,4 @@ for i in values:
     print(i)
 
 print(values[0])
-print(values[6])
+print(values[7])
