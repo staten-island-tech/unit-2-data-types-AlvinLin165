@@ -1,3 +1,5 @@
+##TUTORIAL THING
+
 """ x = 3
 y = float(3)
 print(x,y)
@@ -15,21 +17,59 @@ y= x.split( )
 z = y[0]
 print(y)
 print(z) """
+##END
 
-#this is chat gpt btw
+##COUNT WORDS IN SENTENCE
+
+""" #this is chat gpt btw
 sentence = input("write a sentence plspls pls do it for me")
 word = len(sentence.split()) #len counts individual letters, use split to count words
-print("ill call you", word, "times a day")
+print("ill call you", word, "times a day") """
 
+##END
 
-sentence = input("enter noun, noun, adjective, verb, verb, noun, adjective, gloogorb, and your name")
+##MAD LIBS
 
-nouna = 
-nounb =
-adjective = 
-verbs = 
-verba =
-nounc = 
-adjectivea = 
-gloogorb = 
-name = 
+""" sentence = input("enter name, number, adjective, verb, verb, celebrity, adjective, celebrity (only first name), your name, number, number, and name (DO NOT separate with comma)")
+y = sentence.split()
+
+a = y[0]
+b = y[1]
+c = y[2]
+d = y[3]
+e = y[4]
+f = y[5]
+g = y[6]
+h = y[7]
+i = y[8]
+j = y[9]
+k = y[10]
+l = y[11]
+
+print("On a bright rainy day", a, "decided to go outside and play", b,"videogames. He was", c,"with his new gaming setup. He", d,"and", e, "and eventually beat", f, "after a", g,"game.", h,"got so mad that they decided to call", i, "to send" , j, "bomber planes, a blade of grass," , k, "nukes, and a toothbrush to", l,"'s location")
+ """
+##END
+
+##CLASS NOTES
+
+""" def login(password):
+    if password == "secret":
+        print("logged in")
+    else:
+        print("incorrect")
+x = input("what da password")
+login(x)
+
+def grade(score):
+    if score >=92:
+        print("A")
+    elif score >= 82:
+        print("B")
+    elif score >= 72:
+        print("C")
+    else:
+        print("F")
+x = int(input("what da score"))
+grade(x) """
+
+##END
