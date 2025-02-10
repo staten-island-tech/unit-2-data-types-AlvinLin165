@@ -30,7 +30,7 @@ print("ill call you", word, "times a day") """
 
 ##MAD LIBS
 
-""" sentence = input("enter name, number, adjective, verb, verb, celebrity, adjective, celebrity (only first name), your name, number, number, and name (DO NOT separate with comma)")
+""" sentence = input("enter name, number, adjective, verb in past tense, verb in past tense, celebrity (only first name), adjective, celebrity (only first name), your name, number, number, and name (DO NOT separate with comma)")
 y = sentence.split()
 
 a = y[0]
@@ -73,3 +73,32 @@ x = int(input("what da score"))
 grade(x) """
 
 ##END
+
+##BOOLEANS AND CONTROL FLOW
+
+""" day_of_week = input("what day is it? ")
+if day_of_week == "Friday":
+    print("correct")
+else:
+    print("incorrect")
+
+x = "hello"
+print(f"hello {x}")
+
+temp = 75
+if temp > 68:
+    print('warm')
+elif temp == 68:
+    print('perfect')
+else:
+    print('cold') """
+##END
+
+##ODD OR EVEN
+
+print("pick number")
+
+if x%2 == 0:
+    print("even")
+elif
+    print("false")
