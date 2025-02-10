@@ -96,9 +96,3 @@ else:
 
 ##ODD OR EVEN
 
-print("pick number")
-
-if x%2 == 0:
-    print("even")
-elif
-    print("false")
