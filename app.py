@@ -123,5 +123,11 @@ else:
 
 ##INPUT FACTORS EASY
 
-integer = int(input("please enter a number"))
-if integer % 2 == 0:
+def find_factors(number):
+    factors = [] 
+    for i in range(1, number + 1):
+        if number % i == 0: 
+            factors.append(i) 
+    return factors 
+a = int(input("Enter a number to find its factors: ")) 
+print(f"Factors of {a}: {find_factors(a)}")
