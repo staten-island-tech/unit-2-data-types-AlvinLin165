@@ -45,7 +45,7 @@ j = y[9]
 k = y[10]
 l = y[11]
 
-print("On a bright rainy day", a, "decided to go outside and play", b,"videogames. He was", c,"with his new gaming setup. He", d,"and", e, "and eventually beat", f, "after a", g,"game.", h,"got so mad that they decided to call", i, "to send" , j, "bomber planes, a blade of grass," , k, "nukes, and a toothbrush to", l,"'s location")
+print("On a bright rainy day", a, "decided to go outside and play", b,"video games. He was", c,"with his new gaming setup. He", d,"and", e, "and eventually beat", f, "after a", g,"game.", h,"got so mad that they decided to call", i, "to send" , j, "bomber planes, a blade of grass," , k, "nukes, and a toothbrush to", l,"'s location")
   """
 ##END
 
@@ -123,11 +123,43 @@ else:
 
 ##INPUT FACTORS EASY
 
-def find_factors(number):
+""" def find_factors(number):
     factors = [] 
     for i in range(1, number + 1):
         if number % i == 0: 
             factors.append(i) 
     return factors 
 a = int(input("Enter a number to find its factors: ")) 
-print(f"Factors of {a}: {find_factors(a)}")
+print(f"Factors of {a}: {find_factors(a)}") """
+
+##END
+
+##GCF
+
+def find_factors(number): # find factors
+    factors = [] 
+    for i in range(1, number + 1):
+        if number % i == 0:  
+            factors.append(i)
+    return factors
+
+def find_gcf(num1, num2): #find gcf
+
+    factors_num1 = find_factors(num1) #runs the factoring code with 2 user input
+    factors_num2 = find_factors(num2)
+     
+
+    common_factors = list(set(factors_num1) & set(factors_num2)) #the & operator finds common factors
+    
+
+    gcf = max(common_factors) #max finds biggest vale
+    return gcf #return t o list
+
+
+num1 = int(input("Enter the first number: ")) #ask user
+num2 = int(input("Enter the second number: "))
+
+
+print(f"The GCF of {num1} and {num2} is: {find_gcf(num1, num2)}")
+
+##END (CHATGPT HELPED A LOT)
