@@ -23,7 +23,7 @@ print(z) """
 
 """ sentence = input("write a sentence plspls pls do it for me")
 word = len(sentence.split()) #len counts individual letters, use split to count words
-print("ill call you", word, "times a day") 
+print("that sentence has", word, "number of words") 
  """
 ##END
 
@@ -59,7 +59,7 @@ print("On a bright rainy day", a, "decided to go outside and play", b,"video gam
 x = input("what da password")
 login(x)
 
-def grade(score):
+def grade(score): 
     if score >=92:
         print("A")
     elif score >= 82:
