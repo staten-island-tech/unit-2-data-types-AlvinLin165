@@ -137,29 +137,29 @@ print(f"Factors of {a}: {find_factors(a)}") """
 ##GCF
 
 def find_factors(number): # find factors
-    factors = [] 
-    for i in range(1, number + 1):
-        if number % i == 0:  
-            factors.append(i)
-    return factors
+    factors = [] #list
+    for i in range(1, number + 1): #loop starts divisor at 1 and goes up then divide
+        if number % i == 0:  #loops for factor if number divide add to list
+            factors.append(i) #add to list
+    return factors #repeat loop
 
 def find_gcf(num1, num2): #find gcf
 
-    factors_num1 = find_factors(num1) #runs the factoring code with 2 user input
-    factors_num2 = find_factors(num2)
+    factors_1 = find_factors(num1) #runs the factoring code with 2 user input
+    factors_2 = find_factors(num2) #define factors_2 by running the factor loop
      
 
-    common_factors = list(set(factors_num1) & set(factors_num2)) #the & operator finds common factors
-    
+    common_factors = list(set(factors_1) & set(factors_2)) #the & operator finds common factors
+    #common factors finds similar values in 2 factors and puts highest in list
 
     gcf = max(common_factors) #max finds biggest vale
     return gcf #return t o list
 
 
-num1 = int(input("Enter the first number: ")) #ask user
-num2 = int(input("Enter the second number: "))
+num1 = int(input("first number: ")) #ask user
+num2 = int(input("second number: ")) #ask user again
 
+#plugs in num 1 and num 2, then the result goes back to find_gcf to be put in here 
+print(f"The GCF of {num1} and {num2} is: {find_gcf(num1, num2)}") #tells the user f string
 
-print(f"The GCF of {num1} and {num2} is: {find_gcf(num1, num2)}")
-
-##END (CHATGPT HELPED A LOT)
+##END
