@@ -148,7 +148,7 @@ def qv(c, d): #find gcf
     qa = ql(c) #runs the factoring code with 2 user input
     qb = ql(d) #define ql by running the factor loop
      
-
+    qr = []
     qr = list(set(qa) & set(qb)) #the & operator finds common factors
     #common factors finds similar values in 2 factors and puts highest in list
 
