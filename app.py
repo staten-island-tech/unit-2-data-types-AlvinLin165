@@ -136,30 +136,30 @@ print(f"Factors of {a}: {find_factors(a)}") """
 
 ##GCF
 
-def find_factors(number): # find factors
-    factors = [] #list
+def ql(number): # find factors
+    q = [] #list
     for i in range(1, number + 1): #loop starts divisor at 1 and goes up then divide
         if number % i == 0:  #loops for factor if number divide add to list
-            factors.append(i) #add to list
-    return factors #repeat loop
+            q.append(i) #add to list
+    return q #repeat loop
 
-def find_gcf(num1, num2): #find gcf
+def qv(c, d): #find gcf
 
-    factors_1 = find_factors(num1) #runs the factoring code with 2 user input
-    factors_2 = find_factors(num2) #define factors_2 by running the factor loop
+    qa = ql(c) #runs the factoring code with 2 user input
+    qb = ql(d) #define ql by running the factor loop
      
 
-    common_factors = list(set(factors_1) & set(factors_2)) #the & operator finds common factors
+    qr = list(set(qa) & set(qb)) #the & operator finds common factors
     #common factors finds similar values in 2 factors and puts highest in list
 
-    gcf = max(common_factors) #max finds biggest vale
+    gcf = max(qr) #max finds biggest vale
     return gcf #return t o list
 
 
-num1 = int(input("first number: ")) #ask user
-num2 = int(input("second number: ")) #ask user again
+c = int(input("first number: ")) #ask user
+d = int(input("second number: ")) #ask user again
 
-#plugs in num 1 and num 2, then the result goes back to find_gcf to be put in here 
-print(f"The GCF of {num1} and {num2} is: {find_gcf(num1, num2)}") #tells the user f string
+#plugs in num 1 and num 2, then the result goes back to find gcf to be put in here 
+print(f"The GCF of {c} and {d} is: {qv(c, d)}") #tells the user f string
 
 ##END
