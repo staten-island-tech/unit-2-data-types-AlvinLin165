@@ -140,10 +140,10 @@ def ql(number): # find factors
     q = [] #list
     for i in range(1, number + 1): #loop starts divisor at 1 and goes up then divide
         if number % i == 0:  #loops for factor if number divide add to list
-            q.append(i) #add to list
+            q.append(i) #add to list use append
     return q #repeat loop
 
-def qv(c, d): #find gcf
+def qv(c, d): #defines this thing and following code is this
 
     qa = ql(c) #runs the factoring code with 2 user input
     qb = ql(d) #define ql by running the factor loop
@@ -156,7 +156,7 @@ def qv(c, d): #find gcf
     return gcf #return t o list
 
 
-c = int(input("first number: ")) #ask user
+c = int(input("first number: ")) #ask user int makes the value into a number and sends to qv and runs the factoring code
 d = int(input("second number: ")) #ask user again
 
 #plugs in num 1 and num 2, then the result goes back to find gcf to be put in here 
